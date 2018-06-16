@@ -103,7 +103,7 @@ bot.on('message', (message) => {
     //Xarniel command
     if(msg === prefix + 'XARNIEL'){
         let embed = new Discord.RichEmbed()
-            .setTitle(':MonkaX: Xarniel is an alcoholic. :tumbler_glass:')
+            .setTitle('Xarniel is an alcoholic. :tumbler_glass:')
             .setColor(0xff0000)
         message.channel.send(embed); 
     }
@@ -111,7 +111,7 @@ bot.on('message', (message) => {
     //Stripes command
     if(msg === prefix + 'STRIPES'){
         let embed = new Discord.RichEmbed()
-            .setTitle(':StripesThumbsup: Nyaa~~')
+            .setTitle('Nyaa~~')
             .setColor(0x7FFFD4)
         message.channel.send(embed); 
     }
