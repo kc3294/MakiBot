@@ -76,16 +76,7 @@ bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 */
 
-//Clean list
-function cleanArray(actual) {
-    var newArray = new Array();
-    for (var i = 0; i < actual.length; i++) {
-        if (actual[i]) {
-            newArray.push(actual[i]);
-        }
-    }
-    return newArray;
-}
+
 
 bot.on('message', (message) => {
     let actualMsg = message.content;
@@ -112,9 +103,16 @@ bot.on('message', (message) => {
     //Xarniel command
     if(msg === prefix + 'XARNIEL'){
         let embed = new Discord.RichEmbed()
-            .setTitle('Xarniel is an alcoholic. :tumbler_glass:')
+            .setTitle(':MonkaX: Xarniel is an alcoholic. :tumbler_glass:')
             .setColor(0xff0000)
+        message.channel.send(embed); 
+    }
 
+    //Stripes command
+    if(msg === prefix + 'STRIPES'){
+        let embed = new Discord.RichEmbed()
+            .setTitle(':StripesThumbsup: Nyaa~~')
+            .setColor(0x7FFFD4)
         message.channel.send(embed); 
     }
 
