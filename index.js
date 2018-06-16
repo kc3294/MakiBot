@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const fs = require('fs');
 
 const prefix = '?';
-//const token = 'NDU1NTM0OTQ4MjEyODAxNTM2.Df9lYQ.QUfX8hrSd_a0B1JiR-dNecAgJnY';
+
 
 //CountDown
 var currentPerson;
@@ -414,6 +414,5 @@ bot.on('message', (message) => {
 
 
 });
-
 
 bot.login(process.env.BOT_TOKEN);
